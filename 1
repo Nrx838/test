@@ -1,0 +1,15 @@
+# читаем данные со входа
+numbers = list(map(int, input().split(', ')))
+# либо так:
+# numbers = [int(n) for n in numbers]
+
+#numbers = "5, 2, 3"  # 
+
+def sumOfMin(numbers):
+  numbers.sort()
+  first_min = numbers[0]
+  second_min = numbers[1]
+  result = first_min + second_min
+  return result
+
+print(sumOfMin(numbers))
